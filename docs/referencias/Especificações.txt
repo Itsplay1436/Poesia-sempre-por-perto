@@ -1,0 +1,5 @@
+Tamanho: 24×24px, com 4px de espaço até o rótulo de 13px.
+Traço: 1,6px com pontas arredondadas.
+Cores: aba ativa em #4A2A10 e inativas em #8A6A4C. O ícone herda a cor do texto, então muda junto com o rótulo.
+Aba ativa: mantém o traço de 3px #7B4A26 no topo.
+Barra: continua com 72px de altura. Reduzi o espaço acima do ícone de 20px para 12px para o conjunto caber bem.

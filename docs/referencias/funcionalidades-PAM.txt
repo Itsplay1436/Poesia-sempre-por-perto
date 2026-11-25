@@ -1,0 +1,44 @@
+BASE URL da API:
+https://poetrydb.org
+
+Funcionalidades app PAM:
+
+- visualizar todos autores;
+	endpoint: /author
+	json retornado:
+
+- pesquisar autores;
+	não possui endpoint específico, o melhor é salvar a lista de todos autores e fazer a pesquisa dentro do próprio código.
+
+- visualizar mais informações de um autor;
+	endpoint: /author/nome-autor-completo:abs/info
+	json retornado:
+
+- visualizar todos os títulos;
+	endpoint: /title
+	json retornado:
+
+- pesquisar títulos por nome (retorno: título, autor, número de versos);
+	endpoint: /title/titulo-completo-ou-parte/title,author,linecount
+	json retornado:
+
+- pesquisar títulos por autor (retorno: título, autor, número de versos);
+	endpoint: /author/nome-autor-completo-ou-parte/title,author,linecount
+	json retornado:
+
+- pesquisar títulos por número de versos (retorno: título, autor, número de versos);
+	endpoint: /linecount/I-F/title,author,linecount
+	Obs: I (número mínimon de versos), F (número máximo de versos)
+	json retornado:
+
+- pesquisar títulos por trechos do poema (retorno: título, autor, número de versos);
+	endpoint: /lines/trecho-do-poema/title,author,linecount
+	json retornado:
+
+- visualizar o poema (retorno: título, autor, número de versos e os versos em si)
+	endpoint: /title/titulo-completo:abs
+	json retornado:
+
+- Poemas aleatórios (o usuário escolhe o número de poemas que serão trazidos)
+	endpoint: /random/número-poemas/title,author,linecount
+	json retornado:
